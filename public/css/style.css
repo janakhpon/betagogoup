@@ -1,0 +1,12 @@
+.logo{
+  width:130px;
+  margin:auto;
+}
+
+html, body, .container {
+  background: #2f3640;
+}
+
+textarea {
+  height: 500px;
+}

@@ -1,0 +1,95 @@
+<div class="container-fluid row">
+  <div class="col-md-8">
+
+
+
+    <div class="card-header text-white row rounded mb-4 border-0 bg-transparent">
+
+      <div class="col-sm-4">
+
+      </div>
+      <div class="col-sm-4 text-center">
+
+      </div>
+      <div class="col-sm-4 text-right">
+
+      </div>
+
+    </div>
+
+
+
+    <form style="text-decorarion:none; background:#2C3A47;">
+      <div class="form-group" style="text-decorarion:none; background:#2C3A47; padding-top:5px;">
+        <input type="text" class="form-control border-0 text-center mb-2" style="background:#2C3A47; font-size:19px; color:#11c9c0; font-weight:bold;"
+          value="No Project Is Selected Yet!">
+      </div>
+      <div class="form-group mb-3">
+        <textarea class="form-control border-0 text-center" rows="8" cols="16" style="height:100%; background:#2C3A47; color:#11c9c0; font-size:50px; padding-top:30%;">SELECT A PROJECT!
+
+
+          </textarea>
+      </div>
+    </form>
+
+
+
+
+  </div>
+  <div class="col-md-4">
+
+    <div class="card border-dark bg-transparent mb-3 border-0" style="max-width: 18rem; padding:10px;">
+      <button type="button" class="btn btn-dark">
+        total projects <span class="badge badge-light">15</span>
+      </button>
+    </div>
+
+    <div class="card border-dark bg-transparent mb-3 border-0" style="max-width: 18rem;">
+      <div class="btn btn-md bg-transparent border-0" style="color:#11c9c0;">
+        <h5>Pending Projects</h5>
+        <hr style="background-color:#11c9c0; margin-left:10%; margin-right:10%;" />
+      </div>
+      <div class="card-body border-0" style="background: #2f3640; color:#11c9c0; font-size:15px; height:600px; overflow-y: scroll; outline:none; overflow: auto">
+        <ol>
+
+          {{#each projects}}
+          <li><a href="/projects/display/{{id}}">{{title}}</a></li>
+
+          {{else}}
+          <li>No video projects listed</li>
+          {{/each}}
+
+        </ol>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+</div>
+
+<div class="container card-header rounded" style="padding-top: 60px; position:fixed; margin-bottom:2px; bottom: 0; left: 0; right: 0;">
+  <nav class="navbar rounded row bg-transparent col-sm-8 align-items-center h-100" style="height:50px; margin:2px; padding:2px;">
+    <div class="col-1">
+
+    </div>
+
+    <div class="col-8 text-center" style="padding:5px;">
+      <div class="form-group">
+        <button class="btn btn-dark btn-block" style="color:#11c9c0;">
+          <i class="fas fa-check-circle"></i> I have done and completed this project
+        </button>
+      </div>
+
+    </div>
+    <div class="col-2">
+
+    </div>
+  </nav>
+</div>

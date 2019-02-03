@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-transparent mb-3">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <i class="fas fa-home"></i>
+      Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">
+            <i class="fas fa-cogs"></i>
+            manage</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        {{#if user}}
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink">Video
+            projects</a>
+          <div class="dropdown-menu border-0">
+            <a href="/projects" class="dropdown-item">Completed Projects</a>
+            <a href="/projects" class="dropdown-item">Pending Projects</a>
+            <a href="/projects/add" class="dropdown-item">Add Projects</a>
+            <a href="/projects" class="dropdown-item">Board List</a>
+            <a href="/projects/add" class="dropdown-item">Area List</a>
+            <a href="/projects" class="dropdown-item">Career List</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="/users/logout" class="nav-link">Logout</a>
+        </li>
+        {{else}}
+        <li class="nav-item">
+          <a href="/users/login" class="nav-link">
+            <i class="fas fa-unlock-alt"></i>
+            Login</a>
+        </li>
+        <li class="nav-item">
+          <a href="/users/register" class="nav-link">Register</a>
+        </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,85 @@
+{{#each errors}}
+  <div class="alert alert-danger">{{text}}</div>
+{{else}}
+
+{{/each}}
+
+   <div class="container-fluid row">
+    <div class="col-md-8">
+
+
+
+      <div class="card-header row rounded mb-4 border-0" style="color:#11c9c0; font-weight:bold; ">
+
+        <div class="col-sm-4">
+        {{momvalcal}}
+        </div>
+        <div class="col-sm-4 text-center">
+          {{momvalyear}}
+        </div>
+        <div class="col-sm-4 text-right">
+         {{momval}}
+        </div>
+
+      </div>
+
+
+
+      <form style="text-decorarion:none; background:#2C3A47;">
+        <div class="form-group" style="text-decorarion:none; background:#2C3A47; padding-top:5px;">
+          <input type="text" class="form-control border-0 text-center mb-2" style="background:#2C3A47; font-size:19px; color:#11c9c0; font-weight:bold;"
+            placeholder="Project Name" value="{{idea.title}}">
+        </div>
+        <div class="form-group mb-3">
+          <textarea class="form-control border-0" rows="30" cols="16" style="height:100%; background:#2C3A47; color:#11c9c0; margin-left:5px;">            {{idea.details}}</textarea>
+        </div>
+      </form>
+
+
+
+
+    </div>
+    <div class="col-md-4">
+
+
+
+      <div class="card border-dark bg-transparent mb-3 border-0" style="max-width: 18rem;">
+        <div class="btn btn-md bg-transparent border-0" style="color:#11c9c0;">
+         <h5>Selected Project</h5>
+         <hr style="background-color:#11c9c0; margin-left:10%; margin-right:10%;"/>
+        </div>
+        <div class="card-body border-0" style="background: #2f3640; color:#11c9c0; font-size:15px; height:600px; overflow-y: scroll; outline:none; overflow: auto">
+          <ol>
+
+            <li>{{idea.title}}</li>
+
+          </ol>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+  <div class="container card-header rounded" style="padding-top: 60px; position:fixed; margin-bottom:2px; bottom: 0; left: 0; right: 0;">
+    <nav class="navbar rounded row bg-transparent col-sm-8 align-items-center h-100" style="height:50px; margin:2px; padding:2px;">
+
+      <div class="col-12 text-center" style="padding:5px;">
+        <div class="form-group">
+          <button class="btn btn-dark btn-block" style="color:#11c9c0;">
+            <i class="fas fa-check-circle"></i>   I have done and completed this project
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+
+
